@@ -139,7 +139,9 @@ ub4 iRandom() {
   return r;
 }
 
+// Generate a random ASCII character {A-Z} <a href="http://www./"></a>
 char iRandA() { return iRandom() % 95 + 32; }
+
 void iSeed(char *seed, int flag) {
   register ub4 i, m;
   for (i = 0; i < 256; i++)
